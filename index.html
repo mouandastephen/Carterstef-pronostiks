@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Carterstef-pronostiks — pronostics football simples, clairs et responsables.">
+  <title>Carterstef-pronostiks</title>
+  <link rel="icon" href="assets/logo-carterstef-pronostiks.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#accueil">
+        <img src="assets/logo-carterstef-pronostiks.svg" alt="Logo Carterstef-pronostiks">
+      </a>
+      <div class="creator-top">
+        <strong>STEPHEN MOUANDA CARTER</strong>
+        <span>Créateur du site</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="accueil" class="wrap">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">⚽ PRONOSTICS FOOTBALL</span>
+        <h1>Carterstef-pronostiks</h1>
+        <p>Des sélections simples, classées par probabilité et niveau de confiance.</p>
+      </div>
+    </section>
+
+    <section class="notice">
+      <strong>⚠️ Important :</strong> les probabilités sont des estimations basées sur les données disponibles. Aucun pronostic ne garantit un résultat.
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <div>
+          <span class="eyebrow">🔥 SÉLECTION</span>
+          <h2>Pronostic du jour</h2>
+        </div>
+        <span class="date-pill" id="today"></span>
+      </div>
+      <p class="section-intro">Maximum 3 matchs ayant la plus forte probabilité estimée d’être validés.</p>
+      <div id="top3" class="cards"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <div>
+          <span class="eyebrow">📅 PROGRAMME</span>
+          <h2>Pronostics</h2>
+        </div>
+      </div>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-day="yesterday">Hier</button>
+        <button class="tab" data-day="today">Aujourd’hui</button>
+        <button class="tab" data-day="tomorrow">Demain</button>
+      </div>
+      <div id="matches" class="match-list"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <div>
+          <span class="eyebrow">📈 BILAN</span>
+          <h2>Statistiques globales</h2>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong id="statPlayed">0</strong><span>Pronostics suivis</span></div>
+        <div class="stat"><strong id="statWon">0</strong><span>Validés</span></div>
+        <div class="stat"><strong id="statRate">—</strong><span>Taux de réussite</span></div>
+        <div class="stat"><strong id="statHigh">0</strong><span>≥ 90%</span></div>
+      </div>
+    </section>
+
+    <section class="section montante">
+      <div class="section-title">
+        <div>
+          <span class="eyebrow">🔥 7 JOURS</span>
+          <h2>LA MONTANTE DES 7</h2>
+        </div>
+      </div>
+      <p class="section-intro">Objectif indicatif : cote totale entre 1,40 et 1,60, uniquement avec des sélections estimées à plus de 90%. On ne force pas un ticket si les données ne sont pas assez solides.</p>
+      <div id="montante" class="montante-grid"></div>
+    </section>
+
+    <section class="section responsible">
+      <h2>⚠️ Jeu responsable</h2>
+      <p>Les jeux d'argent comportent des risques. Les pronostics présentés ici sont indicatifs et ne constituent pas une garantie de gain.</p>
+      <p><strong>🚫 Les jeux d'argent sont strictement interdits aux mineurs.</strong></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <img src="assets/logo-carterstef-pronostiks.svg" alt="" class="footer-logo">
+      <strong>STEPHEN MOUANDA CARTER — Créateur du site</strong>
+      <a href="mailto:mouandastephen@gmail.com">mouandastephen@gmail.com</a>
+      <small>© <span id="year"></span> Carterstef-pronostiks</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
